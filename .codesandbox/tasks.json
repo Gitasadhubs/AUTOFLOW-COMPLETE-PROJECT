@@ -1,0 +1,38 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "command": "npm install",
+      "name": "Installing Dependencies"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "start": {
+      "name": "start",
+      "command": "npm run start"
+    },
+    "dev": {
+      "name": "dev",
+      "command": "npm run dev",
+      "runAtStart": true
+    },
+    "db:generate": {
+      "name": "db:generate",
+      "command": "npm run db:generate"
+    },
+    "db:migrate": {
+      "name": "db:migrate",
+      "command": "npm run db:migrate"
+    },
+    "db:push": {
+      "name": "db:push",
+      "command": "npm run db:push"
+    },
+    "test": {
+      "name": "test",
+      "command": "npm run test"
+    }
+  }
+}
